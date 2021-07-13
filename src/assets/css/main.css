@@ -64,6 +64,10 @@ header {
         display: none; }
       header .principalWrapper .inicio {
         display: none; }
+      header .principalWrapper .logo {
+        width: 10rem; }
+      header .principalWrapper .dropdown button {
+        font-size: 2.2rem; }
       header .principalWrapper .dropdown ul {
         background: #ea462b; }
         header .principalWrapper .dropdown ul li a {
@@ -124,24 +128,50 @@ nav {
   height: 100vh;
   align-items: center; }
   @media (max-width: 1200px) {
+    .principal {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      background-image: url("../img/slide2.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 70vh;
+      align-items: center; } }
+  @media (max-width: 1200px) {
+    .principal .principalWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      align-items: center;
+      padding: 1rem; } }
+  @media (max-width: 1200px) {
     .principal .principalWrapper .aboutContent {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 6rem;
+      margin: 5rem;
       text-align: center;
       align-items: center; } }
   .principal h1 {
     font-family: 'Zilla Slab', serif;
     font-size: 84px;
     color: #23292c; }
+    @media (max-width: 1200px) {
+      .principal h1 {
+        font-size: 130px; } }
   .principal p {
     font-family: 'Zilla Slab', serif;
     color: #77777777;
     font-size: 24px;
     line-height: 23px;
     margin-bottom: 1rem; }
+    @media (max-width: 1200px) {
+      .principal p {
+        font-size: 50px;
+        line-height: 53px; } }
   .principal button {
     color: #ffffff;
     font-size: 18px;
@@ -159,6 +189,11 @@ nav {
     .principal button a {
       color: #ffffff;
       text-decoration: none; }
+    @media (max-width: 1200px) {
+      .principal button {
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 53px; } }
 
 .listProducts {
   display: flex;

@@ -36,19 +36,30 @@ header{
       .inicio{
         display: none;
       }
+      .logo{
+        width: 10rem;
+      }
       .dropdown{
+        button{
+          font-size: 2.2rem;
+        }
         ul{
           background: #ea462b;
+          
           li a{
             color:#ffffff;
             text-decoration: none
 
           }
+
           a:hover{
             color: black;
           }
         }
       }
+    }
+    @media (min-width: 320px){
+
     }
   }
   }
@@ -121,21 +132,44 @@ header{
   height: 100vh;
   align-items: center;
 
+  @media (max-width: 1200px){
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-image: url("../img/slide2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    align-items: center;
+  }
+  
+
   .principalWrapper{
-    .aboutContent{
-      @media (max-width: 1200px){
-        @include orderFlex(column,center,center);
-        margin-top: 6rem;
-        text-align: center;
-        align-items: center;
+    @media (max-width: 1200px){
+      @include orderFlex(column,center,center);
+      text-align: center;
+      align-items: center;
+      padding: 1rem;
     }
+      .aboutContent{
+          @media (max-width: 1200px){
+            @include orderFlex(column,center,center);
+            margin: 5rem;
+            text-align: center;
+            align-items: center;
+        }
     
-    
-    }}
+      }
+    }
+
     h1{
       font-family: 'Zilla Slab', serif;
       font-size: 84px;
       color:#23292c;
+      @media (max-width: 1200px){
+        font-size: 130px;
+      }
+
     }
     p{
       font-family: 'Zilla Slab', serif;
@@ -143,6 +177,10 @@ header{
       font-size: 24px;
       line-height: 23px;
       margin-bottom: 1rem;
+      @media (max-width: 1200px){
+        font-size: 50px;
+        line-height: 53px;
+      }
     }
 
     button{
@@ -163,6 +201,12 @@ header{
         a{
           color: #ffffff;
           text-decoration: none
+        }
+
+        @media (max-width: 1200px){
+          margin-top: 20px;
+          font-size: 30px;
+          line-height: 53px;
         }
     }
   }
