@@ -267,7 +267,10 @@ header{
      
     }
     div{
-      @include imageSize(20rem,auto);
+      @include imageSize(13rem,auto);
+      @media (max-width: 1200px){
+        @include imageSize(20rem,auto);
+      }
     }
 
     span {
