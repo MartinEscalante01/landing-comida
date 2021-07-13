@@ -30,7 +30,7 @@ main {
   height: 100%; }
 
 .pokeball div {
-  width: 4rem;
+  width: 3rem;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -42,56 +42,77 @@ main {
 
 @media (min-width: 1200px) {
   .principalWrapper {
-    width: 1200px; } }
+    width: 1200px; }
+    .principalWrapper .dropdown {
+      display: none; } }
 
 header {
   display: flex;
   justify-content: center;
   background-color: white;
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%; }
   header .principalWrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
-    @media (min-width: 1200px) {
-      header .principalWrapper {
-        width: 1200px; } }
-    header .principalWrapper .logo {
-      width: 4rem;
-      height: auto;
-      margin-left: 3rem; }
-    header .principalWrapper nav {
-      width: 30%;
-      margin-left: 5rem; }
-      header .principalWrapper nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center; }
-      header .principalWrapper nav li {
-        text-transform: uppercase; }
-        header .principalWrapper nav li a {
-          font-family: 'Zilla Slab', serif;
-          font-size: 18px;
-          color: black; }
-    header .principalWrapper .inicio button {
+    @media (max-width: 1200px) {
+      header .principalWrapper nav {
+        display: none; }
+      header .principalWrapper .inicio {
+        display: none; }
+      header .principalWrapper .dropdown ul {
+        background: #ea462b; }
+        header .principalWrapper .dropdown ul li a {
+          color: #ffffff;
+          text-decoration: none; }
+        header .principalWrapper .dropdown ul a:hover {
+          color: black; } }
+
+.logo {
+  width: 4rem;
+  height: auto;
+  margin-left: 3rem; }
+
+nav {
+  width: 30%;
+  margin-left: 5rem; }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px; }
+  nav li {
+    text-transform: uppercase; }
+    nav li a {
+      font-family: 'Zilla Slab', serif;
       font-size: 18px;
-      padding: 10px 35px;
-      border: 1px solid #ea462b;
-      font-weight: 600;
-      transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      -webkit-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
-      margin: 0; }
-      header .principalWrapper .inicio button a {
-        color: #23292c; }
-    header .principalWrapper .inicio button:hover {
-      background-color: #ea462b;
-      color: white; }
-      header .principalWrapper .inicio button:hover a:hover {
-        color: white; }
+      color: black;
+      text-decoration: none; }
+
+.inicio button {
+  font-size: 18px;
+  padding: 7px 25px;
+  border: 1px solid #ea462b;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  margin: 0; }
+  .inicio button a {
+    color: #23292c;
+    text-decoration: none; }
+
+.inicio button:hover {
+  background-color: #ea462b;
+  color: white; }
+  .inicio button:hover a:hover {
+    color: white; }
 
 .principal {
   display: flex;
@@ -102,47 +123,42 @@ header {
   background-size: cover;
   height: 100vh;
   align-items: center; }
-  @media (min-width: 200px) {
-    .principal .principalWrapper {
+  @media (max-width: 1200px) {
+    .principal .principalWrapper .aboutContent {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      margin-top: 6rem;
+      text-align: center;
       align-items: center; } }
-  @media (min-width: 1200px) {
-    .principal .principalWrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center; } }
-  .principal .aboutContent {
-    width: 100%;
-    margin-bottom: 6rem; }
-    .principal .aboutContent h1 {
-      font-family: 'Zilla Slab', serif;
-      font-size: 84px;
-      color: #23292c; }
-    .principal .aboutContent p {
-      font-family: 'Zilla Slab', serif;
-      color: #77777777;
-      font-size: 24px;
-      line-height: 23px;
-      margin-bottom: 1rem; }
-    .principal .aboutContent button {
+  .principal h1 {
+    font-family: 'Zilla Slab', serif;
+    font-size: 84px;
+    color: #23292c; }
+  .principal p {
+    font-family: 'Zilla Slab', serif;
+    color: #77777777;
+    font-size: 24px;
+    line-height: 23px;
+    margin-bottom: 1rem; }
+  .principal button {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 35px;
+    background: #ea462b;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    margin: 0;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    border: 1px solid #ea462b; }
+    .principal button a {
       color: #ffffff;
-      font-size: 18px;
-      padding: 10px 35px;
-      background: #ea462b;
-      font-weight: 600;
-      transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      -webkit-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
-      margin: 0;
-      -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-      box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-      border: 1px solid #ea462b; }
-      .principal .aboutContent button a {
-        color: #ffffff; }
+      text-decoration: none; }
 
 .listProducts {
   display: flex;
@@ -169,10 +185,10 @@ header {
     color: #000000ea;
     font-size: 20px; }
   .listProducts ul {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
     @media (max-width: 1200px) {
@@ -234,7 +250,8 @@ header {
       margin-top: 1rem; }
       .listProducts ul button a {
         color: #000000;
-        font-family: 'Zilla Slab', serif; }
+        font-family: 'Zilla Slab', serif;
+        text-decoration: none; }
     .listProducts ul button:hover {
       background: #ea462b; }
       .listProducts ul button:hover a:hover {
@@ -276,7 +293,7 @@ header {
       .description ul li i {
         font-size: 100px; }
         .description ul li i:nth-child(1) {
-          color: #ea462b;
+          color: #e69e18;
           margin-top: 1rem; }
       .description ul li div {
         width: 6rem; }
@@ -302,14 +319,19 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
-  padding: 8rem 0;
+  padding: 5rem 0;
   text-align: center; }
   .galeria .principalWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .galeria .principalWrapper h2 {
+      font-family: 'Zilla Slab', serif;
+      color: #23292c;
+      line-height: 56px;
+      font-weight: 600;
+      font-size: 50px; }
   .galeria ul {
     width: 100%;
     margin-top: 3rem;
@@ -338,7 +360,6 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: #ffffff;
       margin-bottom: 3rem;
       position: relative; }
       @media (max-width: 1200px) {
@@ -352,3 +373,66 @@ header {
       .galeria ul li div {
         width: 20rem;
         height: auto; }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contacto .principalWrapper {
+    padding: 1rem; }
+    .contacto .principalWrapper div {
+      text-align: center; }
+      .contacto .principalWrapper div h2 {
+        font-family: 'Zilla Slab', serif;
+        color: #23292c;
+        line-height: 56px;
+        font-weight: 600;
+        font-size: 50px;
+        margin-bottom: 2rem; }
+    .contacto .principalWrapper ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      @media (max-width: 1200px) {
+        .contacto .principalWrapper ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          text-align: center; } }
+      .contacto .principalWrapper ul li {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem; }
+        @media (max-width: 1200px) {
+          .contacto .principalWrapper ul li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center; } }
+        .contacto .principalWrapper ul li h2 {
+          font-family: 'Zilla Slab', serif;
+          font-weight: 600;
+          color: #23292c;
+          font-size: 22px;
+          margin-bottom: 1rem; }
+        .contacto .principalWrapper ul li span {
+          width: 90%;
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          color: #777777;
+          font-size: 16px;
+          line-height: 25px; }
+        .contacto .principalWrapper ul li .logo2 {
+          display: flex;
+          font-size: 18px;
+          margin-top: 10px; }
+          .contacto .principalWrapper ul li .logo2 i {
+            margin-right: 5px; }
+        .contacto .principalWrapper ul li:nth-of-type(3) span i {
+          margin-right: 1rem;
+          margin-bottom: 10px; }
