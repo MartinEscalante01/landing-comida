@@ -257,7 +257,7 @@ header{
     flex-wrap: wrap;
 }
     li{
-      flex: 0 0 350px;
+      flex: 0 0 320px;
       @include orderFlex(column,center,center);
       border-radius: 3rem;
       padding: 11px;
@@ -267,7 +267,7 @@ header{
      
     }
     div{
-      @include imageSize(13rem,auto);
+      @include imageSize(12rem,auto);
       @media (max-width: 1200px){
         @include imageSize(20rem,auto);
       }
@@ -364,45 +364,47 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
     @media(max-width: 1200px) {
       flex-direction: column;
+      text-align: center;
+      align-items: center;
+      align-self:center;
+
     }
     li {
       @include orderFlex(column, center, center);
       text-align: center;
       background-color: white;
       background: transparent;
-      
+      margin-bottom: 2rem;
+      .logitos {
+        @include imageSize(7rem, auto);
+      }
       @media(max-width: 1200px) {
-          margin-bottom: 4rem;
-      }
-      i{
-        font-size: 100px;
-        &:nth-child(1){
-          color: #e69e18;
-          margin-top: 1rem;
-          
+        .logitos {
+          @include imageSize(13rem, auto);
+          }
+        margin-bottom: 3rem;
+        
+        p{
+          font-size: 5rem;
+          color: black;
         }
-      }
+    }
 
       div {
           width: 6rem;
       }
 
       p {
-          
-          margin-top: 2rem;
+         margin-top: 2rem;
           font-size: 22px;
           margin-bottom: 1rem;
           font-family: 'Zilla Slab', serif;
           font-weight: 600;
           color: #ffffff;
-
-          
-
           @media(max-width: 1200px) {
-              font-size: 2rem;
+              font-size: 4rem;
           }
       }
 
@@ -412,6 +414,9 @@ header{
         font-weight: 400;
         color: #ffffff;
         font-size: 16px;
+        @media(max-width: 1200px) {
+          font-size: 2.4rem;
+      }
       }
 
   }

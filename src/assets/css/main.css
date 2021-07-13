@@ -10,6 +10,10 @@
   width: 100%;
   height: auto; }
 
+* i {
+  width: 100;
+  height: auto; }
+
 body {
   width: 100vw;
   max-width: 100%;
@@ -248,7 +252,7 @@ nav {
         align-items: center;
         flex-wrap: wrap; } }
     .listProducts ul li {
-      flex: 0 0 350px;
+      flex: 0 0 320px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -259,7 +263,7 @@ nav {
         .listProducts ul li {
           flex: 0 0 500px; } }
     .listProducts ul div {
-      width: 13rem;
+      width: 12rem;
       height: auto; }
       @media (max-width: 1200px) {
         .listProducts ul div {
@@ -344,7 +348,10 @@ nav {
     justify-content: space-between; }
     @media (max-width: 1200px) {
       .description ul {
-        flex-direction: column; } }
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        align-self: center; } }
     .description ul li {
       display: flex;
       flex-direction: column;
@@ -352,15 +359,20 @@ nav {
       align-items: center;
       text-align: center;
       background-color: white;
-      background: transparent; }
+      background: transparent;
+      margin-bottom: 2rem; }
+      .description ul li .logitos {
+        width: 7rem;
+        height: auto; }
       @media (max-width: 1200px) {
         .description ul li {
-          margin-bottom: 4rem; } }
-      .description ul li i {
-        font-size: 100px; }
-        .description ul li i:nth-child(1) {
-          color: #e69e18;
-          margin-top: 1rem; }
+          margin-bottom: 3rem; }
+          .description ul li .logitos {
+            width: 13rem;
+            height: auto; }
+          .description ul li p {
+            font-size: 5rem;
+            color: black; } }
       .description ul li div {
         width: 6rem; }
       .description ul li p {
@@ -372,13 +384,16 @@ nav {
         color: #ffffff; }
         @media (max-width: 1200px) {
           .description ul li p {
-            font-size: 2rem; } }
+            font-size: 4rem; } }
       .description ul li span {
         width: 70%;
         font-family: 'Lato', sans-serif;
         font-weight: 400;
         color: #ffffff;
         font-size: 16px; }
+        @media (max-width: 1200px) {
+          .description ul li span {
+            font-size: 2.4rem; } }
 
 .galeria {
   display: flex;
