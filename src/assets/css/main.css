@@ -566,3 +566,33 @@ nav {
         .contacto .principalWrapper ul li:nth-of-type(3) span i {
           margin-right: 1rem;
           margin-bottom: 10px; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px; }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer ul a {
+      text-decoration: none;
+      color: #596872; }
+    footer ul li {
+      padding: 3rem;
+      text-decoration: none; }
+      footer ul li i {
+        font-size: 20px; }
+        @media (max-width: 1200px) {
+          footer ul li i {
+            font-size: 30px; } }
+
+p {
+  font-size: 20px;
+  font-family: 'Karla', sans-serif; }
+  @media (max-width: 1200px) {
+    p {
+      font-size: 30px; } }

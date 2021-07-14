@@ -608,3 +608,41 @@ header{
       
   }
 }
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+      text-decoration:none;
+      color: #596872;
+    }
+
+    li{
+      padding: 3rem;
+      text-decoration: none;
+      i{
+        font-size: 20px;
+        @media (max-width:1200px){
+          font-size: 30px;
+        }
+      }
+      
+      
+    }
+  }
+}
+p{
+  font-size: 20px;
+  font-family: 'Karla', sans-serif;
+  @media (max-width:1200px){
+    font-size: 30px;
+  }
+}
