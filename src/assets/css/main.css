@@ -162,6 +162,7 @@ nav {
       justify-content: center;
       align-items: center;
       margin: 5rem;
+      margin-bottom: 0;
       text-align: center;
       align-items: center; } }
   .principal h1 {
@@ -257,7 +258,6 @@ nav {
         align-items: center;
         flex-wrap: wrap; } }
     .listProducts ul li {
-      flex: 0 0 320px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -266,7 +266,12 @@ nav {
       padding: 11px; }
       @media (max-width: 1200px) {
         .listProducts ul li {
-          flex: 0 0 500px; } }
+          flex: 0 0 500px;
+          padding: 2rem; } }
+      @media (max-width: 500px) {
+        .listProducts ul li {
+          flex: 0 0 200px;
+          padding: 2rem; } }
     .listProducts ul div {
       width: 12rem;
       height: auto; }
@@ -448,16 +453,20 @@ nav {
       margin: 5px; }
       @media (max-width: 1200px) {
         .galeria ul li {
-          width: 400px; } }
-      @media (max-width: 575px) {
+          flex: 0 0 500px; } }
+      @media (max-width: 500px) {
         .galeria ul li {
-          width: 300px; } }
+          flex: 0 0 200px; } }
       .galeria ul li div {
         width: 20rem;
         height: auto; }
         @media (max-width: 1200px) {
           .galeria ul li div {
             width: 40rem;
+            height: auto; } }
+        @media (max-width: 500px) {
+          .galeria ul li div {
+            width: 20rem;
             height: auto; } }
 
 .contacto {

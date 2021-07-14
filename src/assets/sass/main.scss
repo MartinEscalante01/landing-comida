@@ -157,6 +157,7 @@ header{
           @media (max-width: 1200px){
             @include orderFlex(column,center,center);
             margin: 5rem;
+            margin-bottom: 0;
             text-align: center;
             align-items: center;
         }
@@ -259,12 +260,17 @@ header{
     flex-wrap: wrap;
 }
     li{
-      flex: 0 0 320px;
       @include orderFlex(column,center,center);
       border-radius: 3rem;
       padding: 11px;
+      
       @media (max-width: 1200px){
         flex: 0 0 500px;
+        padding: 2rem;
+      }
+      @media (max-width: 500px){
+        flex: 0 0 200px;
+        padding: 2rem;
       }
      
     }
@@ -467,12 +473,12 @@ header{
     margin: 5px;
 
     @media (max-width: 1200px){
-        width: 400px;
+        flex: 0 0 500px;
         
     }
 
-    @media (max-width: 575px){
-        width: 300px;
+    @media (max-width: 500px){
+        flex: 0 0 200px;
       
     }
 
@@ -480,6 +486,10 @@ header{
       @include imageSize(20rem, auto);
         @media (max-width: 1200px){
           @include imageSize(40rem, auto);
+          
+        }
+        @media (max-width: 500px){
+          @include imageSize(20rem, auto);
           
         }
 
