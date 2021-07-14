@@ -58,9 +58,7 @@ header{
         }
       }
     }
-    @media (min-width: 320px){
-
-    }
+    
   }
   }
     
@@ -139,9 +137,13 @@ header{
     background-image: url("../img/slide2.jpg");
     background-position: center;
     background-size: cover;
-    height: 70vh;
     align-items: center;
   }
+  @media (max-width: 450px){
+    height: 70vh;
+
+  }
+
   
 
   .principalWrapper{

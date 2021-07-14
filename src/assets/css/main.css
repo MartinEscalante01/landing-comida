@@ -142,8 +142,10 @@ nav {
       background-image: url("../img/slide2.jpg");
       background-position: center;
       background-size: cover;
-      height: 70vh;
       align-items: center; } }
+  @media (max-width: 450px) {
+    .principal {
+      height: 70vh; } }
   @media (max-width: 1200px) {
     .principal .principalWrapper {
       display: flex;
