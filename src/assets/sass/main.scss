@@ -427,61 +427,64 @@ header{
 
 .galeria{
   @include orderFlex(column, center, center);
-    
-    padding: 5rem 0;
-    text-align: center;
-
-  .principalWrapper {
-    @include orderFlex(column, center, center);
-    
-    h2{
-      font-family: 'Zilla Slab', serif;
-      color: #23292c;
-      line-height: 56px;
-      font-weight: 600;
-      font-size: 50px;
-    }
+  text-align: center;
+    .principalWrapper {
+      @include orderFlex(column, center, center);
   }
+
+  h2{
+    font-family: 'Zilla Slab', serif;
+    color: #23292c;
+    line-height: 56px;
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @media (max-width: 1200px){
+      font-size: 120px;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      
+  }
+}
   
-  ul {
+  ul{
     width: 100%;
-    margin-top: 3rem;
-    @include orderFlex(row, space-evenly, center);
+    @include orderFlex(row,center, center);
     flex-wrap: wrap;
+    padding: 0px;
 
     @media (max-width: 1200px){
-        @include orderFlex(row, center, center);
-        flex-wrap: wrap;
-    }
-    @media (max-width: 575px){
       @include orderFlex(column, center, center);
-      flex-wrap: wrap;
+      
   }
+  li {
+    flex:  0 0 300px;
+    @include orderFlex(column, center, center);
+    position: relative;
+    margin: 5px;
 
-    li {
-        flex:  0 0 270px;
-        @include orderFlex(column, center, center);
-        margin-bottom: 3rem;
-        position: relative;
-
-        @media (max-width: 1200px){
-            width: 400px;
-            flex:  0 0 370px;
-            
-        }
-
-        @media (max-width: 575px){
-            width: 200px;
-            flex:  0 0 170px;
-        }
-
-        div {
-            @include imageSize(20rem, auto);
-        }
-
+    @media (max-width: 1200px){
+        width: 400px;
         
     }
-}
+
+    @media (max-width: 575px){
+        width: 300px;
+      
+    }
+
+    div {
+      @include imageSize(20rem, auto);
+        @media (max-width: 1200px){
+          @include imageSize(40rem, auto);
+          
+        }
+
+      }
+    }
+  }
+
 }
 
 .contacto{
@@ -497,7 +500,12 @@ header{
         font-weight: 600;
         font-size: 50px;
         margin-bottom: 2rem;
-      
+        
+        @media (max-width:1200px){
+          font-size: 6rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
     }
     }
     ul{
@@ -529,6 +537,10 @@ header{
           color: #23292c;
           font-size: 22px;
           margin-bottom: 1rem;
+          @media (max-width: 1200px){
+            @include orderFlex(column, center, center);
+            font-size: 4rem;
+          }
         }
         span{
           width: 90%;
@@ -537,14 +549,35 @@ header{
           color: #777777;
           font-size: 16px;
           line-height: 25px;
+          @media (max-width: 1200px){
+            @include orderFlex(column, center, center);
+            font-size: 2rem;
+            line-height: 40px;
+
+        }
         }
         
         .logo2{
           display: flex;
           font-size: 18px;
           margin-top: 10px;
+          @media (max-width: 1200px){
+            @include orderFlex(row, center, center);
+            font-size: 3rem;
+            margin-top: 10px;
+            
+
+        }
+          
           i{
             margin-right: 5px;
+            @media (max-width: 1200px){
+              @include orderFlex(row, center, center);
+              margin-right: 20px;
+              
+  
+          }
+
           }
         }
 

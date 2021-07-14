@@ -400,60 +400,60 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0;
   text-align: center; }
   .galeria .principalWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .galeria .principalWrapper h2 {
-      font-family: 'Zilla Slab', serif;
-      color: #23292c;
-      line-height: 56px;
-      font-weight: 600;
-      font-size: 50px; }
+  .galeria h2 {
+    font-family: 'Zilla Slab', serif;
+    color: #23292c;
+    line-height: 56px;
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    @media (max-width: 1200px) {
+      .galeria h2 {
+        font-size: 120px;
+        margin-top: 3rem;
+        margin-bottom: 3rem; } }
   .galeria ul {
     width: 100%;
-    margin-top: 3rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding: 0px; }
     @media (max-width: 1200px) {
-      .galeria ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap; } }
-    @media (max-width: 575px) {
       .galeria ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        flex-wrap: wrap; } }
+        align-items: center; } }
     .galeria ul li {
-      flex: 0 0 270px;
+      flex: 0 0 300px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-bottom: 3rem;
-      position: relative; }
+      position: relative;
+      margin: 5px; }
       @media (max-width: 1200px) {
         .galeria ul li {
-          width: 400px;
-          flex: 0 0 370px; } }
+          width: 400px; } }
       @media (max-width: 575px) {
         .galeria ul li {
-          width: 200px;
-          flex: 0 0 170px; } }
+          width: 300px; } }
       .galeria ul li div {
         width: 20rem;
         height: auto; }
+        @media (max-width: 1200px) {
+          .galeria ul li div {
+            width: 40rem;
+            height: auto; } }
 
 .contacto {
   display: flex;
@@ -471,6 +471,11 @@ nav {
         font-weight: 600;
         font-size: 50px;
         margin-bottom: 2rem; }
+        @media (max-width: 1200px) {
+          .contacto .principalWrapper div h2 {
+            font-size: 6rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem; } }
     .contacto .principalWrapper ul {
       display: flex;
       justify-content: space-between;
@@ -501,6 +506,13 @@ nav {
           color: #23292c;
           font-size: 22px;
           margin-bottom: 1rem; }
+          @media (max-width: 1200px) {
+            .contacto .principalWrapper ul li h2 {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              font-size: 4rem; } }
         .contacto .principalWrapper ul li span {
           width: 90%;
           font-family: 'Lato', sans-serif;
@@ -508,12 +520,35 @@ nav {
           color: #777777;
           font-size: 16px;
           line-height: 25px; }
+          @media (max-width: 1200px) {
+            .contacto .principalWrapper ul li span {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              font-size: 2rem;
+              line-height: 40px; } }
         .contacto .principalWrapper ul li .logo2 {
           display: flex;
           font-size: 18px;
           margin-top: 10px; }
+          @media (max-width: 1200px) {
+            .contacto .principalWrapper ul li .logo2 {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              font-size: 3rem;
+              margin-top: 10px; } }
           .contacto .principalWrapper ul li .logo2 i {
             margin-right: 5px; }
+            @media (max-width: 1200px) {
+              .contacto .principalWrapper ul li .logo2 i {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px; } }
         .contacto .principalWrapper ul li:nth-of-type(3) span i {
           margin-right: 1rem;
           margin-bottom: 10px; }
