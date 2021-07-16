@@ -297,7 +297,7 @@ nav {
       line-height: 26px;
       color: #383434db;
       font-size: 16px;
-      width: 100%; }
+      width: 80%; }
       @media (max-width: 1200px) {
         .listProducts ul span:nth-of-type(2) {
           font-size: 30px;
@@ -483,13 +483,12 @@ nav {
       .contacto .principalWrapper div h2 {
         font-family: 'Zilla Slab', serif;
         color: #23292c;
-        line-height: 56px;
         font-weight: 600;
         font-size: 50px;
         margin-bottom: 2rem; }
         @media (max-width: 1200px) {
           .contacto .principalWrapper div h2 {
-            font-size: 6rem;
+            font-size: 7rem;
             margin-top: 2rem;
             margin-bottom: 2rem; } }
     .contacto .principalWrapper ul {
@@ -503,7 +502,8 @@ nav {
           justify-content: center;
           align-items: center;
           flex-wrap: wrap;
-          text-align: center; } }
+          text-align: center;
+          padding: 0; } }
       .contacto .principalWrapper ul li {
         display: flex;
         flex-direction: column;
@@ -515,7 +515,8 @@ nav {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center; } }
+            text-align: center;
+            width: 100%; } }
         .contacto .principalWrapper ul li h2 {
           font-family: 'Zilla Slab', serif;
           font-weight: 600;
@@ -528,7 +529,7 @@ nav {
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              font-size: 4rem; } }
+              font-size: 5rem; } }
         .contacto .principalWrapper ul li span {
           width: 90%;
           font-family: 'Lato', sans-serif;
@@ -543,7 +544,8 @@ nav {
               justify-content: center;
               align-items: center;
               font-size: 2rem;
-              line-height: 40px; } }
+              line-height: 40px;
+              display: block; } }
         .contacto .principalWrapper ul li .logo2 {
           display: flex;
           font-size: 18px;
@@ -590,7 +592,7 @@ footer {
         font-size: 20px; }
         @media (max-width: 1200px) {
           footer ul li i {
-            font-size: 30; } }
+            font-size: 4rem; } }
 
 p {
   font-size: 20px;

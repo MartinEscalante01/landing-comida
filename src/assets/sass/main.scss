@@ -302,7 +302,7 @@ header{
         line-height: 26px;
         color: #383434db;
         font-size: 16px;
-        width: 100%;
+        width: 80%;
         @media (max-width: 1200px){
           font-size: 30px;
           line-height: 50px;
@@ -510,13 +510,13 @@ header{
       h2{
         font-family: 'Zilla Slab', serif;
         color: #23292c;
-        line-height: 56px;
+        
         font-weight: 600;
         font-size: 50px;
         margin-bottom: 2rem;
         
         @media (max-width:1200px){
-          font-size: 6rem;
+          font-size: 7rem;
           margin-top: 2rem;
           margin-bottom: 2rem;
         }
@@ -531,6 +531,7 @@ header{
         @include orderFlex(column, center, center);
         flex-wrap: wrap;
         text-align: center;
+        padding: 0;
     }
     
 
@@ -543,17 +544,18 @@ header{
         @media (max-width: 1200px){
           @include orderFlex(column, center, center);
           text-align: center;
+          width: 100%;
       }
         
         h2{
           font-family: 'Zilla Slab', serif;
-            font-weight: 600;
+          font-weight: 600;
           color: #23292c;
           font-size: 22px;
           margin-bottom: 1rem;
           @media (max-width: 1200px){
             @include orderFlex(column, center, center);
-            font-size: 4rem;
+            font-size: 5rem;
           }
         }
         span{
@@ -567,7 +569,7 @@ header{
             @include orderFlex(column, center, center);
             font-size: 2rem;
             line-height: 40px;
-
+            display: block;
         }
         }
         
@@ -633,7 +635,8 @@ footer{
       i{
         font-size: 20px;
         @media (max-width:1200px){
-          font-size: 30}
+          font-size: 4rem;
+        }
         }
       }
       
