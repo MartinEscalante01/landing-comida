@@ -41,7 +41,7 @@ main {
   z-index: 1; }
   @media (max-width: 1200px) {
     .pokeball div {
-      width: 6rem;
+      width: 9rem;
       padding: 1rem; } }
 
 @media (min-width: 200px) {
