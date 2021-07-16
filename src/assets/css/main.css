@@ -222,7 +222,6 @@ nav {
   .listProducts h2 {
     font-family: 'Zilla Slab', serif;
     color: #23292c;
-    line-height: 56px;
     font-weight: 600;
     font-size: 50px; }
     @media (max-width: 1200px) {
@@ -244,7 +243,8 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    background: #FAFAFA; }
     @media (max-width: 1200px) {
       .listProducts ul {
         display: flex;

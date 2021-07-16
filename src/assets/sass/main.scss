@@ -231,7 +231,6 @@ header{
   h2{
     font-family: 'Zilla Slab', serif;
     color: #23292c;
-    line-height: 56px;
     font-weight: 600;
     font-size: 50px;
     @media (max-width: 1200px){
@@ -253,6 +252,7 @@ header{
     width: 100%;
     @include orderFlex(row,center,center);
     flex-wrap: wrap;
+    background: #FAFAFA;
     @media (max-width: 1200px){
       @include orderFlex(row, center, center);
       flex-wrap: wrap;
