@@ -488,7 +488,7 @@ header{
     div {
       @include imageSize(20rem, auto);
         @media (max-width: 1200px){
-          @include imageSize(40rem, auto);
+          @include imageSize(55rem, auto);
           
         }
         @media (max-width: 500px){

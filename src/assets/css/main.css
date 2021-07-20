@@ -461,7 +461,7 @@ nav {
         height: auto; }
         @media (max-width: 1200px) {
           .galeria ul li div {
-            width: 40rem;
+            width: 55rem;
             height: auto; } }
         @media (max-width: 500px) {
           .galeria ul li div {
