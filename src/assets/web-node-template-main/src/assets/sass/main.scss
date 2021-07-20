@@ -25,8 +25,8 @@ body{
     flex-direction: column;
     align-items: center;
     align-self: center;
-    width: 620px;
-    height: 820px;
+    width: 720px;
+    height: 920px;
     color: #fff;
     top: 50%;
     left: 50%;
@@ -43,13 +43,14 @@ body{
       margin-top: 3rem;
       margin-bottom: 1rem;
       font-family: 'Zilla Slab', serif;
-      font-size: 90px;
+      font-size: 8rem;
+      padding: 1rem;
      
     }
     .imagen{
       display: flex;
       justify-content: center;
-      width: 60%;
+      width: 70%;
     }
     img{
       margin-top: 2rem;
@@ -64,8 +65,8 @@ body{
       align-items: center;
       
       input{
-        width: 400px;
-        height: 70px;
+        width: 600px;
+        height: 90px;
         margin: 5px;
         text-align: center;
         background: transparent;
@@ -81,7 +82,7 @@ body{
       .btn{
         font-family: 'Zilla Slab', serif;
         font-size: 40px;
-        padding: 1rem 6rem;
+        padding: 2rem 7rem;
         text-decoration: none;
         color: rgb(255, 255, 255);
         background-color: #EA462B;
@@ -97,8 +98,10 @@ body{
         font-family: 'Zilla Slab', serif;
         text-decoration: none;
         color: #EA462B;
-        font-size: 38px;
-        margin-top: 10px;
+        font-size: 58px;
+        padding: 1rem;
+        
+        
        
       }
       a:hover{
@@ -119,8 +122,8 @@ body{
     flex-direction: column;
     align-items: center;
     align-self: center;
-    width: 320px;
-    height: 420px;
+    width: 420px;
+    height: 620px;
     color: #fff;
     top: 50%;
     left: 50%;
