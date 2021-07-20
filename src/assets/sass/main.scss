@@ -287,25 +287,26 @@ header{
       &:nth-of-type(1){
         font-family: 'Zilla Slab', serif;
         font-weight: 600;
-        line-height: 28px;
+        
         color: #23292c;
         font-size: 22px;
         @media (max-width: 1200px){
-          font-size: 50px;
-          padding: 2rem;
+          font-size: 70px;
+          padding: 1rem;
+
         }
         
       }
       &:nth-of-type(2){
         font-family: 'Lato', sans-serif;
         font-weight: 400;
-        line-height: 26px;
+        
         color: #383434db;
         font-size: 16px;
         width: 80%;
         @media (max-width: 1200px){
-          font-size: 30px;
-          line-height: 50px;
+          font-size: 50px;
+          
         }
         
       }
@@ -392,12 +393,12 @@ header{
       }
       @media(max-width: 1200px) {
         .logitos {
-          @include imageSize(13rem, auto);
+          @include imageSize(30rem, auto);
           }
         margin-bottom: 3rem;
         
         p{
-          font-size: 5rem;
+          font-size: 7rem;
           color: black;
         }
     }
@@ -414,7 +415,7 @@ header{
           font-weight: 600;
           color: #ffffff;
           @media(max-width: 1200px) {
-              font-size: 4rem;
+              font-size: 6rem;
           }
       }
 
@@ -425,7 +426,7 @@ header{
         color: #ffffff;
         font-size: 16px;
         @media(max-width: 1200px) {
-          font-size: 2.4rem;
+          font-size: 3.4rem;
       }
       }
 
